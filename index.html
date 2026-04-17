@@ -428,8 +428,12 @@
     .payment-box {
       background: rgba(0, 0, 0, 0.3);
       border: 1px solid rgba(207, 181, 59, 0.2);
-      padding: 0.01rem;
+      padding: 2rem 1.5rem;
       margin-top: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
 
     .payment-title {
@@ -438,7 +442,25 @@
       letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--old-gold);
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
+      margin-top: 1.5rem;
+      width: 100%;
+      text-align: center;
+    }
+
+    .payment-title:first-child {
+      margin-top: 0;
+    }
+
+    .zelle-email {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+      font-weight: 600;
+      color: var(--cream);
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+      text-align: center;
+      word-break: break-all;
     }
 
     .cashapp-tag {
@@ -469,6 +491,7 @@
       margin-top: 1.5rem;
       padding-top: 1.5rem;
       border-top: 1px solid rgba(207, 181, 59, 0.15);
+      width: 100%;
     }
 
     .payment-instructions-title {
@@ -758,7 +781,7 @@
 
       <div class="payment-box">
 		<div class="payment-title">Pay via Zelle</div>
-		<h3 class="purchase-title">NuOmegaKRS@gmail.com</h3>
+		<h3 class="zelle-email">NuOmegaKRS@gmail.com</h3>
 			
         <div class="payment-title">Pay via CashApp</div>
         
