@@ -511,7 +511,7 @@
       margin-bottom: 0.5rem;
       text-align: center;
       white-space: nowrap;
-      font-size: clamp(0.7rem, 2.3vw, 1.2rem);
+      font-size: 1.1rem;
       max-width: 100%;
     }
 	  
@@ -825,11 +825,19 @@
       .anniversary-badge { font-size: 0.7rem; padding: 0.8rem 1.5rem; }
       .payment-box { padding: 3rem 0.75rem; }
       .check-info { max-width: 100%; font-size: clamp(1rem, 5vw, 1.2rem); }
+      .purchase-section { padding: 4rem 1rem; }
+      .check-info-oneline { font-size: 1.05rem; }
+    }
+
+    @media (max-width: 480px) {
+      .payment-box { padding: 2.5rem 0.5rem; }
+      .check-info-oneline { font-size: 0.8rem; }
     }
 
     @media (max-width: 380px) {
-      .purchase-section { padding: 4rem 1rem; }
-      .payment-box { padding: 2.5rem 0.5rem; }
+      .purchase-section { padding: 4rem 0.75rem; }
+      .payment-box { padding: 2rem 0.5rem; }
+      .check-info-oneline { font-size: 0.7rem; }
     }
   </style>
 </head>
