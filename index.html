@@ -502,6 +502,18 @@
       margin-right: auto;
       line-height: 1.4;
     }
+
+	.check-info-oneline {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 600;
+      color: var(--cream);
+      letter-spacing: 0;
+      margin-bottom: 0.5rem;
+      text-align: center;
+      white-space: nowrap;
+      font-size: clamp(0.5rem, 2.3vw, 0.9rem);
+      max-width: 100%;
+    }
 	  
     .payment-instructions {
       margin-top: 1.5rem;
@@ -811,8 +823,13 @@
       .cashapp-tag { font-size: 1.4rem; padding: 0.7rem 1.5rem; }
       .contact-grid { gap: 1rem; }
       .anniversary-badge { font-size: 0.7rem; padding: 0.8rem 1.5rem; }
-      .payment-box { padding: 3rem 1rem; }
+      .payment-box { padding: 3rem 0.75rem; }
       .check-info { max-width: 100%; font-size: clamp(1rem, 5vw, 1.2rem); }
+    }
+
+    @media (max-width: 380px) {
+      .purchase-section { padding: 4rem 1rem; }
+      .payment-box { padding: 2.5rem 0.5rem; }
     }
   </style>
 </head>
@@ -901,7 +918,7 @@
 		<div class="payment-title">Pay via Check</div>
 
 		<h2 class="check-info">Payable to:</h2>
-		<h3 class="check-info">Omega Psi Phi Fraternity, Inc. - Nu Omega Chapter</h3>
+		<h3 class="check-info-oneline">Omega Psi Phi Fraternity, Inc. - Nu Omega Chapter</h3>
 		  
 		<h2 class="check-info">Mailing Address:</h2>
 		 <h3 class="check-info">PO Box 2614 Detroit, MI 48202</h3> 
